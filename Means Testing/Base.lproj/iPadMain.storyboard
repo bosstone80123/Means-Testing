@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Nka-ua-rQv">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Information-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Means_Testing" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="State:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="91G-om-Hzi">
+                                <rect key="frame" x="20" y="40" width="76" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="MQY-iH-mSM"/>
+                                    <constraint firstAttribute="width" constant="76" id="ZqC-Qj-YcN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="State Selection" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zyy-bB-eO1">
+                                <rect key="frame" x="94" y="43" width="179" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="LRM-4L-YQM"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="County:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QY0-Hb-Yeh">
+                                <rect key="frame" x="281" y="47" width="60" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="County Selection" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gdn-ew-mrc">
+                                <rect key="frame" x="349" y="43" width="226" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="226" id="IaW-0r-DH8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mmw-o4-H1p">
+                                <rect key="frame" x="0.0" y="524" width="1024" height="187"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1024" id="fHc-Dk-8YC"/>
+                                </constraints>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Marital Status:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RLc-z4-zIR">
+                                <rect key="frame" x="583" y="47" width="111" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N7a-6Y-OlX">
+                                <rect key="frame" x="0.0" y="591" width="1024" height="125"/>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="House Hold Size:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dj4-8t-5qY">
+                                <rect key="frame" x="20" y="94" width="131" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qT6-6g-CMh">
+                                <rect key="frame" x="154" y="90" width="40" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minimumValue="1" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="J2k-MR-iu8">
+                                <rect key="frame" x="196" y="90" width="94" height="29"/>
+                                <connections>
+                                    <action selector="HouseholdSizeStepper:" destination="BYZ-38-t0r" eventType="valueChanged" id="mTf-kg-aeL"/>
+                                </connections>
+                            </stepper>
+                            <textField opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Marital Status" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yE7-bb-Mh2">
+                                <rect key="frame" x="702" y="43" width="225" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="98c-kK-T30"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Zyy-bB-eO1" firstAttribute="baseline" secondItem="gdn-ew-mrc" secondAttribute="baseline" id="4Xf-Pu-jXC"/>
+                            <constraint firstItem="QY0-Hb-Yeh" firstAttribute="baseline" secondItem="91G-om-Hzi" secondAttribute="firstBaseline" id="CQK-Bn-IHF"/>
+                            <constraint firstItem="91G-om-Hzi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="ERo-1s-bcg"/>
+                            <constraint firstItem="Mmw-o4-H1p" firstAttribute="trailing" secondItem="Zyy-bB-eO1" secondAttribute="trailing" constant="751" id="Nj0-eA-i3R"/>
+                            <constraint firstItem="91G-om-Hzi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="W8u-Ou-0Wr"/>
+                            <constraint firstItem="gdn-ew-mrc" firstAttribute="leading" secondItem="QY0-Hb-Yeh" secondAttribute="trailing" constant="8" symbolic="YES" id="as5-Vk-KZp"/>
+                            <constraint firstItem="QY0-Hb-Yeh" firstAttribute="leading" secondItem="Zyy-bB-eO1" secondAttribute="trailing" constant="8" symbolic="YES" id="bV9-uJ-ofi"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Mmw-o4-H1p" secondAttribute="bottom" constant="8" id="rFd-Er-CkH"/>
+                            <constraint firstItem="Zyy-bB-eO1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="74" id="t7D-Lg-fUN"/>
+                            <constraint firstItem="91G-om-Hzi" firstAttribute="leading" secondItem="Mmw-o4-H1p" secondAttribute="leading" constant="20" id="ukF-Ns-RZC"/>
+                            <constraint firstItem="Zyy-bB-eO1" firstAttribute="centerY" secondItem="QY0-Hb-Yeh" secondAttribute="centerY" id="wjS-Ec-mCr"/>
+                            <constraint firstItem="Mmw-o4-H1p" firstAttribute="top" secondItem="91G-om-Hzi" secondAttribute="bottom" constant="449" id="yiq-7i-jSu"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Information" id="N17-T9-8M5"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="HouseHoldSize" destination="J2k-MR-iu8" id="xnX-lt-jCF"/>
+                        <outlet property="HouseholdSizeTextBox" destination="qT6-6g-CMh" id="rB9-H4-pph"/>
+                        <outlet property="MaritalStatusPicker" destination="N7a-6Y-OlX" id="v2r-Bi-mnf"/>
+                        <outlet property="MaritalStatusTextBox" destination="yE7-bb-Mh2" id="1cn-vb-R0D"/>
+                        <outlet property="StatePicker" destination="Mmw-o4-H1p" id="Igr-iP-HGB"/>
+                        <outlet property="StateTextBox" destination="Zyy-bB-eO1" id="Vft-kV-VXr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1061" y="349"/>
+        </scene>
+        <!--Income-->
+        <scene sceneID="DTS-5f-7f1">
+            <objects>
+                <viewController id="qnu-7i-QQi" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="o3H-q7-e7a"/>
+                        <viewControllerLayoutGuide type="bottom" id="9l6-iG-Qv5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="osW-md-qX4">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Income" id="uGS-cx-Lb6"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wb2-Q6-5AZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1061" y="1198"/>
+        </scene>
+        <!--IRS Standards-->
+        <scene sceneID="D4e-oq-GRB">
+            <objects>
+                <viewController id="abK-H5-sJL" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IWv-2Y-lft"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZjN-VK-SHW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7bH-At-SfW">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="IRS Standards" id="Ygc-vY-zYZ"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5C-Pi-zaD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1061" y="2092"/>
+        </scene>
+        <!--Other-->
+        <scene sceneID="DRc-lX-YQq">
+            <objects>
+                <viewController id="BUN-Ju-Bhw" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VmQ-UO-6nH"/>
+                        <viewControllerLayoutGuide type="bottom" id="R8q-d6-B3M"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="g5P-CK-aQZ">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Other" id="UCO-mV-KSa"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fU1-CE-C7g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1061" y="2975"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="k3O-aC-23N">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Nka-ua-rQv" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Jft-qb-4kj">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="NZ4-ea-XgS"/>
+                        <segue destination="qnu-7i-QQi" kind="relationship" relationship="viewControllers" id="2yj-7M-zzC"/>
+                        <segue destination="abK-H5-sJL" kind="relationship" relationship="viewControllers" id="EZ3-M0-QlF"/>
+                        <segue destination="BUN-Ju-Bhw" kind="relationship" relationship="viewControllers" id="LVu-v3-MuW"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aKf-Sf-5ve" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-39" y="349"/>
+        </scene>
+    </scenes>
+</document>
